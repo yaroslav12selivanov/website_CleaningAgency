@@ -1,0 +1,334 @@
+/* Настройка шрифтов, контейнеров и стилей */
+@font-face {
+  font-family: "Mont";
+  src: url("./fonts/Mont/woff/MontRegular.woff") format("woff"),
+       url("./fonts/Mont/woff2/AnyConv.com__MontRegular.woff2") format("woff2"),
+       url("./fonts/Mont/ttf/MontRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./fonts/Mont/woff/MontSemiBold.woff2") format("woff"),
+       url("./fonts/Mont/woff2/AnyConv.com__MontSemiBold.woff2") format("woff2"),
+       url("./fonts/Mont/ttf/MontSemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./fonts/Mont/woff/MontBold.woff2") format("woff"),
+       url("./fonts/Mont/woff2/AnyConv.com__MontBold.woff2") format("woff2"),
+       url("./fonts/Mont/ttf/MontBold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  font-family: "Mont";
+  font-weight: 400;
+  font-size: 12px;
+  color: #4B5258;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* Настройка хеадера сайта */
+.header {
+  margin-top: 18px;
+}
+
+.header__bloks__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__block__center {
+  display: flex;
+  gap: 45px;
+}
+
+.header__block__center__left {
+  display: inline-grid;
+  align-items: center;
+}
+
+.help__date__text {
+  position: relative;
+  padding-left: 15px;
+}
+
+.help__date__text::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #20FF87;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__block__center__right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-align: right;
+}
+
+.phone__number {
+  font-weight: 600;
+  font-size: 18px;
+  color: #4B5258;
+}
+
+.help__date__text {
+  font-size: 14px;
+  color: #959A9D;
+}
+
+.header__block__center__right a:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.6;
+}
+
+.header__block__right button {
+  background-color: transparent;
+  border: 1px solid #43AAFF;
+  border-radius: 100px;
+  padding: 21px 26px 21px 26px;
+}
+
+.header__block__right button:hover {
+  transition: 0.2s ease-in-out;
+  background-color: #43AAFF;
+  color: white;
+}
+
+/* Настройка главной страницы main__screan */
+.main__screan {
+  max-width: 100%;
+  padding-bottom: 200px;
+  background-image: url("./img/images/jpg/main-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center -85px;
+}
+
+.main__offer__elements__text {
+  padding-top: 83px;
+  width: 570px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* .offer__text__another::before {
+  content: "";
+  border: none;
+  width: 40px;
+  border-top: 2px solid #43AAFF;
+  margin: 10px 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+} */
+
+/* .custom-hr {
+  border: none;
+  width: 40px;
+  border-top: 2px solid #43AAFF;
+  margin: 10px 0;
+} */
+
+.offer__text__bold {
+  font-weight: 700;
+}
+
+.offer__text__another2 {
+  font-size: 18px;
+}
+
+.procent {
+  font-weight: 600;
+}
+
+.main__offer__elements__description p {
+  margin-top: 36px;
+  max-width: 453px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.main__offer__elements__buttons {
+  margin-top: 50px;
+}
+
+.price {
+  border-radius: 100px;
+  width: 297px;
+  height: 80px;
+  background: #43aaff;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  /* Комбинирование двух box-shadow */
+  box-shadow: 
+    inset 0 4px 10px rgba(255, 255, 255, 0.3), /* Внутренняя тень */
+    0px 5px 20px 2px rgba(45, 160, 255, 0.35); /* Внешняя тень */
+
+  -webkit-box-shadow: 
+    inset 0 4px 10px rgba(255, 255, 255, 0.3), 
+    0px 5px 20px 2px rgba(45, 160, 255, 0.35);
+  
+  -moz-box-shadow: 
+    inset 0 4px 10px rgba(255, 255, 255, 0.3), 
+    0px 5px 20px 2px rgba(45, 160, 255, 0.35);
+}
+
+.price:hover {
+  transition: 0.3s ease-in-out;
+  background: #3b97e2;
+  color: #ffffffc4;
+}
+
+.clear {
+  margin-left: 15px;
+  border-radius: 100px;
+  width: 297px;
+  height: 80px;
+  background: #ffc24d;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: 0.3s ease-in-out;
+
+  box-shadow: 
+    inset 0 4px 10px 0 rgba(255, 255, 255, 0.3),
+    0px 5px 20px 2px rgba(229, 165, 44, 0.35);
+  
+  -webkit-box-shadow: 
+    inset 0 4px 10px rgba(255, 255, 255, 0.3), 
+    0px 5px 20px 2px rgba(229, 165, 44, 0.35);
+  
+  -moz-box-shadow: 
+    inset 0 4px 10px rgba(255, 255, 255, 0.3), 
+    0px 5px 20px 2px rgba(229, 165, 44, 0.35);
+}
+
+.clear:hover {
+  transition: 0.3s ease-in-out;
+  background: #e4ad47;
+  color: #ffffffc4;
+}
+
+/* Настройка главной страницы all__information */
+.all__information {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Настройка главной страницы alternative__header */
+.alternative__header__lits {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 73px;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height: 100%;
+  background-color: #bbe0ff;
+  border-radius: 8px;
+  z-index: 0;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.alternative__header__menu {
+  position: relative;
+}
+
+/* Настройка главной страницы calculate__price */
+.calculate__price__text {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.calculate__price__title {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.calculate__price__title__bold {
+  font-weight: 700;
+}
+
+.calculate__price {
+  margin-top: 35px;
+}
+
+.calculate__price__description p {
+  margin-top: 20px;
+  color: #959A9D;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.calculate__price__block {
+  margin-top: 43px;
+  padding-top: 50px;
+  padding-left: 63px;
+  padding-right: 63px;
+  width: 100%;
+  height: 100vh;
+  background: url("./img/images/jpg/tetsbg.jpg") no-repeat center center;
+  background-size: cover;
+  background-color: #43AAFF;
+}
+
+.calculate__price__block__offer {
+  margin-top: 80px;
+}
+
+.calculate__price__block__offer__title {
+  text-align: center;
+  width: 467px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.calculate__price__block__offer__description {
+  margin-top: 20px;
+  width: 296px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
